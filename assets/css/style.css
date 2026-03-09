@@ -1,9 +1,43 @@
-css
 /* ==========================================================================
    RATTIL Islamic App Website - Premium Light Glassmorphism Style
    ========================================================================== */
 
 /* Using hardcoded colors as fallbacks in case CSS variables fail to parse */
+@font-face {
+    font-family: 'TheYearofHandicrafts';
+    src: url('../fonts/TheYearofHandicrafts-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheYearofHandicrafts';
+    src: url('../fonts/TheYearofHandicrafts-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheYearofHandicrafts';
+    src: url('../fonts/TheYearofHandicrafts-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheYearofHandicrafts';
+    src: url('../fonts/TheYearofHandicrafts-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheYearofHandicrafts';
+    src: url('../fonts/TheYearofHandicrafts-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 :root {
     --primary-color: #0d9488;
     --primary-light: #14b8a6;
@@ -23,8 +57,8 @@ css
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
     --glass-blur: 16px;
 
-    --font-main: 'Tajawal', sans-serif;
-    --font-quran: 'Amiri Quran', serif;
+    --font-main: 'TheYearofHandicrafts', 'Tajawal', sans-serif;
+    --font-quran: 'TheYearofHandicrafts', 'Amiri Quran', serif;
 }
 
 * {
@@ -35,7 +69,7 @@ css
 }
 
 body {
-    font-family: 'Tajawal', sans-serif;
+    font-family: var(--font-main);
     background-color: #f8fafc;
     background-image: radial-gradient(circle at top right, #e2e8f0, #f8fafc, #f1f5f9);
     background-size: cover;
@@ -227,7 +261,7 @@ h6 {
 .logo-text {
     font-size: 1.6rem;
     font-weight: 800;
-    font-family: 'Amiri Quran', serif;
+    font-family: var(--font-quran);
     color: #0f172a;
 }
 
@@ -425,7 +459,7 @@ h6 {
     font-weight: 700;
     color: #0d9488;
     margin-bottom: 4px;
-    font-family: 'Amiri Quran', serif;
+    font-family: var(--font-quran);
 }
 
 .widget-footer {
@@ -629,7 +663,7 @@ h6 {
 }
 
 .prayer-time {
-    font-family: 'Amiri Quran', serif;
+    font-family: var(--font-quran);
     font-size: 1.3rem;
     color: #0f172a;
 }
@@ -806,7 +840,7 @@ h6 {
 }
 
 .footer-info h3 {
-    font-family: 'Amiri Quran', serif;
+    font-family: var(--font-quran);
     font-size: 1.8rem;
     margin-bottom: 16px;
     color: #0f172a;

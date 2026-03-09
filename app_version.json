@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.1",
   "notes": "• تحسين دقة مواقيت الصلاة\n• إصلاح خطأ في التاريخ الهجري\n• تحسينات في الأداء",
   "force": false,
   "url": "https://rattil-web.vercel.app/update.html"

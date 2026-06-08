@@ -5,12 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تحديث تطبيق رَتِّل | RATTIL Update</title>
+    <!-- Cairo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logoapp.png" type="image/x-icon">
+    <style>
+        .update-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: var(--bg-color);
+            padding: 40px 20px;
+        }
+
+        .update-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .update-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .update-title {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .app-name {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .update-meta {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .update-features-container h3 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            text-align: right;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .advanced-features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .advanced-features-list li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: right;
+            gap: 15px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-gray);
+            font-size: 1.05rem;
+        }
+        .advanced-features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-icon-box {
+            background: rgba(132, 204, 22, 0.15); /* Accent lime with opacity */
+            color: var(--accent-green);
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .download-actions {
+            margin-bottom: 20px;
+        }
+        
+        .btn-glow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px;
+            font-size: 1.2rem;
+            background: var(--text-dark);
+            color: #fff;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .update-footer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .back-home-link {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+        
+        .back-home-link:hover {
+            color: var(--text-dark);
+        }
+    </style>
 </head>
 
 <body class="update-page">
@@ -20,10 +172,7 @@
         <div class="container d-flex-center">
             <div class="update-card glass-card pull-up-animation">
                 <div class="update-header">
-                    <div class="update-icon-wrapper">
-                        <img src="assets/images/logoapp.png" alt="Rattil Logo" class="update-logo">
-                        <div class="update-badge"><i class='bx bx-cloud-download'></i></div>
-                    </div>
+                    <img src="assets/images/logoapp.png" alt="Rattil Logo" class="update-logo">
                     <div class="update-title-area">
                         <h1 class="update-title">تحديث جديد متاح!</h1>
                         <p class="app-name">تطبيق رَتِّل - RATTIL</p>

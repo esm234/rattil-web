@@ -14,7 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logoapp.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/rattil logo transparent.png" type="image/png">
     <style>
         .update-page {
             display: flex;
@@ -161,6 +161,46 @@
         
         .back-home-link:hover {
             color: var(--text-dark);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .update-card {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+            .update-logo {
+                width: 70px;
+                height: 70px;
+            }
+            .update-title {
+                font-size: 1.6rem;
+            }
+            .app-name {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            .update-meta {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            .meta-item {
+                justify-content: center;
+            }
+            .advanced-features-list li {
+                font-size: 0.95rem;
+                align-items: flex-start;
+            }
+            .feature-icon-box {
+                width: 30px;
+                height: 30px;
+                font-size: 1rem;
+            }
+            .btn-glow {
+                font-size: 1.1rem;
+                padding: 14px;
+            }
         }
     </style>
 </head>

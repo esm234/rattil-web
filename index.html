@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رَتِّل | RATTIL - التطبيق الإسلامي الشامل</title>
-    <!-- Cairo Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <title>رَتِّل | RATTIL - رفيقك الإيماني اليومي</title>
+    <!-- Google Fonts: Cairo & Amiri for Editorial Spiritual Contrast -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -16,188 +17,235 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Navbar -->
+    <!-- Floating Glassmorphic Pill Navbar -->
+    <div class="navbar-wrapper">
         <nav class="navbar">
-            <div class="logo">
-                <img src="assets/images/rattil logo transparent.png" alt="Rattil Logo" style="height: 56px; object-fit: contain;">
-            </div>
+            <a href="#" class="logo">
+                <img src="assets/images/rattil logo transparent.png" alt="Rattil Logo">
+                <span class="logo-brand">رَتِّل</span>
+            </a>
             <div class="nav-links">
-                <a href="#prayers">أوقات الصلاة</a>
+                <a href="#prayers">مواقيت الصلاة</a>
                 <a href="#features">المميزات</a>
+                <a href="#showcase">جولة بالتطبيق</a>
+                <a href="#audio">المكتبة الصوتية</a>
                 <a href="#faq">الأسئلة الشائعة</a>
             </div>
             <div class="nav-actions">
-                <a href="#download" class="btn btn-black">حمل التطبيق</a>
+                <a href="#download" class="btn btn-primary">حمّل التطبيق</a>
             </div>
         </nav>
+    </div>
 
-        <!-- Hero Section (Luxique Style) -->
+    <div class="container">
+        <!-- Hero Section -->
         <header class="luxique-hero">
+            <div class="hero-grid-bg"></div>
             <div class="luxique-glow glow-1"></div>
             <div class="luxique-glow glow-2"></div>
 
-            <div class="hero-content text-center reveal">
-                <div class="section-label mx-auto mb-4">الإصدار الأحدث 1.0.3</div>
-                <h1>استمتع بتجربة إسلامية<br>نقية وخالية من المشتتات!</h1>
-                <p class="hero-desc mx-auto">حمل رَتِّل للحصول على مواقيت دقيقة، مصحف ذكي، وتجربة خالية تماماً من
-                    الإعلانات المزعجة.</p>
+            <div class="hero-content reveal">
+                <div class="version-pill">
+                    <span class="version-badge">الإصدار 1.0.3</span>
+                    <span class="version-text">تجربة خالية تماماً من الإعلانات</span>
+                </div>
+                <h1>سكينةٌ في كل تفصيلة،<br>وعبادةٌ <span class="serif-accent">بلا مُشتتات.</span></h1>
+                <p class="hero-desc">صُمم تطبيق رَتِّل بعناية ليجمع لك المصحف الشريف، مواقيت الصلاة الدقيقة، والأذكار اليومية في واجهة عصرية هادئة تحترم خشوعك وخصوصيتك.</p>
 
-                <div class="hero-buttons justify-center">
-                    <a href="#download" class="btn btn-black btn-lg">
-                        <i class="fa-brands fa-apple"></i> App Store
+                <div class="hero-buttons">
+                    <a href="https://github.com/esm234/rattil-web/releases/download/v1.0.3/rattil.apk" class="btn btn-primary btn-lg" download>
+                        <i class="fa-brands fa-android"></i> تحميل مباشر (APK)
                     </a>
-                    <a href="https://github.com/esm234/rattil-web/releases/download/v1.0.3/rattil.apk"
-                        class="btn btn-black btn-lg" download>
-                        <i class="fa-brands fa-google-play"></i> Google Play
+                    <a href="#audio" class="btn btn-secondary btn-lg">
+                        <i class="fa-solid fa-headphones"></i> استمع للتلاوات
                     </a>
                 </div>
             </div>
 
-            <!-- Central Phone Visual with Floating Avatars -->
-            <div class="hero-visual-center reveal-scale delay-2">
+            <!-- Central Phone Visual with Contextual Floating Badges -->
+            <div class="hero-visual-center reveal-scale delay-1">
                 <div class="phone-wrapper">
-                    <img src="assets/images/hero-mockup.jpg" alt="Rattil App in Hand" class="main-phone-img">
+                    <img src="assets/images/hero-mockup.jpg" alt="Rattil App Interface" class="main-phone-img">
                 </div>
 
-                <!-- Floating Elements (Overlapping the image) -->
-                <div class="float-avatar float-pos-1"><i class="fa-solid fa-mosque"></i></div>
-                <div class="float-avatar float-pos-2"><i class="fa-solid fa-book-quran"></i></div>
-                <div class="float-avatar float-pos-3"><i class="fa-solid fa-hands-praying"></i></div>
-                <div class="float-avatar float-pos-4"><i class="fa-solid fa-compass"></i></div>
+                <!-- Floating Contextual Glass Cards -->
+                <div class="float-card float-pos-1">
+                    <div class="float-card-icon"><i class="fa-solid fa-mosque"></i></div>
+                    <div class="float-card-text">
+                        <strong>مواقيت دقيقة</strong>
+                        <span>حسب موقعك الجغرافي</span>
+                    </div>
+                </div>
+                <div class="float-card float-pos-2">
+                    <div class="float-card-icon"><i class="fa-solid fa-book-quran"></i></div>
+                    <div class="float-card-text">
+                        <strong>مصحف التجويد</strong>
+                        <span>تفسير وتلاوة فورية</span>
+                    </div>
+                </div>
+                <div class="float-card float-pos-3">
+                    <div class="float-card-icon"><i class="fa-solid fa-hands-praying"></i></div>
+                    <div class="float-card-text">
+                        <strong>حصن المسلم</strong>
+                        <span>تتبع وردك اليومي</span>
+                    </div>
+                </div>
+                <div class="float-card float-pos-4">
+                    <div class="float-card-icon"><i class="fa-solid fa-compass"></i></div>
+                    <div class="float-card-text">
+                        <strong>بوصلة القبلة</strong>
+                        <span>استجابة فورية ودقيقة</span>
+                    </div>
+                </div>
             </div>
         </header>
 
-
-        <!-- Prayers Section (Custom component integrated elegantly) -->
-        <section id="prayers" class="features-section">
-            <div class="text-center reveal">
-                <div class="section-label">أوقات الصلاة</div>
-                <h2 class="section-title">مواقيت دقيقة أينما كنت</h2>
-                <p class="section-subtitle">تنبيهات للأذان والإقامة مبنية على خوارزميات موقعك الجغرافي لضمان الدقة
-                    الكاملة.</p>
+        <!-- Prayers Section -->
+        <section id="prayers" class="prayers-section">
+            <div class="section-header reveal">
+                <div class="section-label">مواقيت الصلاة</div>
+                <h2 class="section-title">دقةٌ فلكية أينما حللت</h2>
+                <p class="section-subtitle">حسابات دقيقة لمواقيت الأذان والإقامة مبنية على إحداثيات موقعك الجغرافي مع تنبيهات ذكية قبل كل صلاة.</p>
             </div>
 
-            <div class="prayer-row reveal delay-2">
+            <div class="prayer-row reveal delay-1">
                 <div class="prayer-card">
-                    <i class="fa-solid fa-moon"></i>
+                    <div class="p-icon-wrap"><i class="fa-solid fa-moon"></i></div>
                     <span class="p-name">الفجر</span>
-                    <span class="p-time">04:15</span>
+                    <span class="p-time">04:15 AM</span>
                 </div>
+                
                 <div class="prayer-card">
-                    <i class="fa-solid fa-sun"></i>
+                    <div class="p-icon-wrap"><i class="fa-solid fa-sun"></i></div>
                     <span class="p-name">الشروق</span>
-                    <span class="p-time">05:53</span>
+                    <span class="p-time">05:53 AM</span>
                 </div>
 
                 <div class="prayer-card active-card-light">
                     <div class="active-header">
-                        <span class="p-name">الظهر</span>
-                        <div class="active-tag">متبقي للأذان</div>
+                        <span class="p-name">صلاة الظهر</span>
+                        <div class="active-tag">الصلاة القادمة</div>
                     </div>
                     <div class="active-timer">
-                        <span class="countdown">00:27:41</span>
+                        <span class="countdown" id="live-countdown">00:27:41</span>
                     </div>
                     <div class="active-footer">
-                        <span>وقت الصلاة</span>
+                        <span>موعد الأذان</span>
                         <span class="p-time">12:54 PM</span>
                     </div>
                 </div>
 
                 <div class="prayer-card">
-                    <i class="fa-solid fa-cloud-sun"></i>
+                    <div class="p-icon-wrap"><i class="fa-solid fa-cloud-sun"></i></div>
                     <span class="p-name">العصر</span>
-                    <span class="p-time">04:30</span>
+                    <span class="p-time">04:30 PM</span>
                 </div>
 
                 <div class="prayer-card">
-                    <i class="fa-solid fa-cloud-moon"></i>
+                    <div class="p-icon-wrap"><i class="fa-solid fa-cloud-moon"></i></div>
                     <span class="p-name">المغرب</span>
-                    <span class="p-time">07:55</span>
-                </div>
-                
-                <div class="prayer-card">
-                    <i class="fa-solid fa-star-and-crescent"></i>
-                    <span class="p-name">العشاء</span>
-                    <span class="p-time">09:25</span>
+                    <span class="p-time">07:55 PM</span>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Bento Grid Features Section -->
         <section id="features" class="features-section">
-            <div class="text-center reveal">
-                <div class="section-label">المميزات</div>
-                <h2 class="section-title">نوفر لك تطبيقاً آمناً،<br>سهل الاستخدام، وفعّال</h2>
-                <p class="section-subtitle">نجمع بين جمال التصميم وعمق الوظائف لتجربة إيمانية لا تُنسى.</p>
+            <div class="section-header reveal">
+                <div class="section-label">المميزات الشاملة</div>
+                <h2 class="section-title">صُمم ليُغنيك عن عشرات التطبيقات</h2>
+                <p class="section-subtitle">توازن مثالي بين ثراء الخصائص وبساطة التجربة، بدون أي إعلانات أو نوافذ منبثقة تقطع خشوعك.</p>
             </div>
 
             <div class="features-grid">
+                <!-- Wide Bento Card 1 -->
+                <div class="feature-card bento-wide reveal delay-1">
+                    <div class="feat-top">
+                        <div class="feat-icon"><img src="assets/images/quranlogo.png" alt="Quran" style="width:28px; height:28px; object-fit:contain;"></div>
+                        <span class="feat-badge">يعمل بدون إنترنت</span>
+                    </div>
+                    <div>
+                        <h3>المصحف الشريف بالتجويد الملون</h3>
+                        <p>قراءة مريحة للعين بالرسم العثماني الأصيل مع ترميز لوني لأحكام التجويد، وحفظ تلقائي لعلامات التوقف، مع إمكانية الاستماع لكل آية أو عرض تفسيرها بلمسة واحدة.</p>
+                    </div>
+                </div>
+                
+                <!-- Highlighted Emerald Card -->
+                <div class="feature-card highlighted-card bento-wide reveal delay-2">
+                    <div class="feat-top">
+                        <div class="feat-icon"><img src="assets/images/notifications.png" alt="Notifications" style="width:28px; height:28px; object-fit:contain; filter: brightness(0) invert(1);"></div>
+                        <span class="feat-badge">دقة متناهية</span>
+                    </div>
+                    <div>
+                        <h3>مؤذن ذكي وتنبيهات مخصصة</h3>
+                        <p>اختر صوت المؤذن المفضل لديك، واضبط تنبيهات ما قبل الأذان والإقامة بدقة عالية تتكيف تلقائياً مع سفرك وتغير موقعك الجغرافي في أي مكان بالعالم.</p>
+                    </div>
+                </div>
+                
+                <!-- Standard Cards -->
                 <div class="feature-card reveal delay-1">
-                    <div class="feat-icon"><img src="assets/images/quranlogo.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>المصحف الشريف</h3>
-                    <p>قراءة مريحة للعين مع التجويد الملون وحفظ علامات التوقف للمتابعة السلسة.</p>
+                    <div class="feat-top">
+                        <div class="feat-icon"><img src="assets/images/reading.png" alt="Adhkar" style="width:28px; height:28px; object-fit:contain;"></div>
+                    </div>
+                    <div>
+                        <h3>حصن المسلم</h3>
+                        <p>أذكار الصباح والمساء والأدعية النبوية مقسمة ومفهرسة بتصميم يسهل القراءة والتتبع اليومي.</p>
+                    </div>
                 </div>
                 
-                <div class="feature-card highlighted-card reveal delay-2">
-                    <div class="feat-icon"><img src="assets/images/notifications.png" style="width:28px; height:28px; object-fit:contain; filter: brightness(0);"></div>
-                    <h3>تنبيهات دقيقة</h3>
-                    <p>تنبيهات مخصصة للأذان لجميع الصلوات بدقة متناهية أينما كنت في العالم.</p>
-                </div>
-                
-                <div class="feature-card reveal delay-3">
-                    <div class="feat-icon"><img src="assets/images/reading.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>حصن المسلم</h3>
-                    <p>أذكار الصباح والمساء الشاملة بتصميم يسهل القراءة والتتبع اليومي.</p>
-                </div>
-                
-                <div class="feature-card reveal delay-4">
-                    <div class="feat-icon"><img src="assets/images/tv.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>البث المباشر</h3>
-                    <p>بث مباشر على مدار الساعة للحرم المكي والمسجد النبوي الشريف.</p>
-                </div>
-
-                <div class="feature-card reveal delay-1">
-                    <div class="feat-icon"><img src="assets/images/sibha.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>سبحة إلكترونية</h3>
-                    <p>مسبحة ذكية لحفظ وتتبع الأذكار اليومية مع خاصية الاهتزاز عند كل تسبيحة.</p>
-                </div>
-
                 <div class="feature-card reveal delay-2">
-                    <div class="feat-icon"><img src="assets/images/radio.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>راديو القرآن</h3>
-                    <p>استمع لإذاعات القرآن الكريم لكبار القراء على مدار الساعة بجودة عالية.</p>
+                    <div class="feat-top">
+                        <div class="feat-icon"><img src="assets/images/sibha.png" alt="Sibha" style="width:28px; height:28px; object-fit:contain;"></div>
+                    </div>
+                    <div>
+                        <h3>مسبحة إلكترونية</h3>
+                        <p>عداد تسبيح ذكي يحفظ إحصائيات أذكارك اليومية مع استجابة اهتزازية خفيفة عند كل تسبيحة.</p>
+                    </div>
                 </div>
 
                 <div class="feature-card reveal delay-3">
-                    <div class="feat-icon"><img src="assets/images/3d-calendar.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>تقويم هجري</h3>
-                    <p>تقويم هجري دقيق مع إمكانية التعديل اليدوي لمطابقة الرؤية في بلدك.</p>
+                    <div class="feat-top">
+                        <div class="feat-icon"><img src="assets/images/radio.png" alt="Radio" style="width:28px; height:28px; object-fit:contain;"></div>
+                    </div>
+                    <div>
+                        <h3>إذاعات القرآن</h3>
+                        <p>بث مباشر على مدار الساعة لأشهر إذاعات القرآن الكريم لكبار القراء مع دعم التشغيل بالخلفية.</p>
+                    </div>
                 </div>
-                
+
                 <div class="feature-card reveal delay-4">
-                    <div class="feat-icon"><img src="assets/images/3d-compass.png" style="width:28px; height:28px; object-fit:contain;"></div>
-                    <h3>بوصلة القبلة</h3>
-                    <p>بوصلة ذكية وسريعة الاستجابة لتحديد اتجاه القبلة بكل دقة وسهولة.</p>
+                    <div class="feat-top">
+                        <div class="feat-icon"><img src="assets/images/3d-compass.png" alt="Compass" style="width:28px; height:28px; object-fit:contain;"></div>
+                    </div>
+                    <div>
+                        <h3>بوصلة القبلة والتقويم</h3>
+                        <p>تحديد دقيق وسريع لاتجاه القبلة، مع تقويم هجري وميلادي متكامل يوضح المناسبات الإسلامية.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- App Showcase Section -->
         <section id="showcase" class="showcase-section">
-            <div class="text-center reveal">
+            <div class="section-header reveal">
                 <div class="section-label">جولة داخل التطبيق</div>
-                <h2 class="section-title">كل ما تحتاجه في شاشة واحدة</h2>
-                <p class="section-subtitle">تصميم عصري ومريح يجمع بين جمال المظهر وسهولة الاستخدام.</p>
+                <h2 class="section-title">واجهةٌ تبعث على الطمأنينة</h2>
+                <p class="section-subtitle">كل شاشة في رَتِّل صُممت بعناية فائقة لتكون واضحة، سريعة الاستجابة، ومريحة للعين في القراءة النهارية والليلية.</p>
             </div>
 
             <!-- Row 1: Quran -->
             <div class="showcase-row">
                 <div class="sc-content reveal-right">
-                    <h3>المصحف الشريف بتجربة قراءة لا مثيل لها</h3>
-                    <p>استمتع بقراءة القرآن الكريم بخط عثماني واضح جداً ومريح للعين. مع دعم كامل للوضع الليلي، وتلوين لأحكام التجويد، وإمكانية الضغط على أي آية للاستماع لتلاوتها أو قراءة تفسيرها فوراً.</p>
+                    <span class="sc-step">01 / المصحف الذكي</span>
+                    <h3>تجربة قراءة تحاكي المصحف الورقي</h3>
+                    <p>استمتع بقراءة القرآن الكريم بخط عثماني واضح جداً ومريح للعين، مع دعم كامل للوضع الليلي، وتلوين لأحكام التجويد، وإمكانية الضغط المطول على أي آية للاستماع لتلاوتها أو قراءة تفسيرها فوراً.</p>
+                    <ul class="sc-highlights">
+                        <li><i class="fa-solid fa-check"></i> خط عثماني عالي الدقة مع تلوين التجويد</li>
+                        <li><i class="fa-solid fa-check"></i> البحث السريع في الآيات والسور والأجزاء</li>
+                        <li><i class="fa-solid fa-check"></i> حفظ تلقائي لآخر صفحة وصلت إليها</li>
+                    </ul>
                 </div>
-                <div class="sc-visual reveal-3d-left">
+                <div class="sc-visual reveal-scale">
                     <img src="assets/images/quran-showcase.png" alt="Quran Screen" class="mockup-img">
                 </div>
             </div>
@@ -205,10 +253,16 @@
             <!-- Row 2: Adhkar (Reversed) -->
             <div class="showcase-row reversed">
                 <div class="sc-content reveal-left">
-                    <h3>حصن المسلم ووردك اليومي</h3>
-                    <p>واجهة مخصصة لقراءة أذكار الصباح والمساء بطريقة سلسة. مع عداد تسبيح ذكي يمكنك من متابعة وردك، وميزة الاهتزاز الخفيف عند كل تسبيحة لتجربة روحانية متكاملة.</p>
+                    <span class="sc-step">02 / الأذكار والتسبيح</span>
+                    <h3>حصن المسلم ووردك اليومي في جيبك</h3>
+                    <p>واجهة مخصصة لقراءة أذكار الصباح والمساء بطريقة سلسة وتفاعلية. مع عداد تسبيح ذكي يتناقص تلقائياً عند اللمس، وميزة الاهتزاز الخفيف عند إتمام كل ذكر.</p>
+                    <ul class="sc-highlights">
+                        <li><i class="fa-solid fa-check"></i> عداد تفاعلي لكل ذكر مع تنبيه عند الانتهاء</li>
+                        <li><i class="fa-solid fa-check"></i> إمكانية تعديل حجم الخط لراحة العين</li>
+                        <li><i class="fa-solid fa-check"></i> تخريج الأحاديث وفضل كل ذكر</li>
+                    </ul>
                 </div>
-                <div class="sc-visual reveal-3d-right">
+                <div class="sc-visual reveal-scale">
                     <img src="assets/images/adhkar-showcase.png" alt="Adhkar Screen" class="mockup-img">
                 </div>
             </div>
@@ -216,48 +270,56 @@
             <!-- Row 3: Radio -->
             <div class="showcase-row">
                 <div class="sc-content reveal-right">
+                    <span class="sc-step">03 / الصوتيات والراديو</span>
                     <h3>إذاعات القرآن الكريم على مدار الساعة</h3>
-                    <p>استمع لأعذب التلاوات من أشهر إذاعات القرآن الكريم حول العالم. المشغل يدعم العمل في الخلفية، مما يسمح لك بمواصلة الاستماع حتى أثناء استخدامك لتطبيقات أخرى.</p>
+                    <p>استمع لأعذب التلاوات من أشهر إذاعات القرآن الكريم حول العالم بجودة صوت نقية. المشغل يدعم العمل في الخلفية بسلاسة حتى أثناء قفل الشاشة أو تصفح تطبيقات أخرى.</p>
+                    <ul class="sc-highlights">
+                        <li><i class="fa-solid fa-check"></i> بث مباشر بدون تقطيع على مدار 24 ساعة</li>
+                        <li><i class="fa-solid fa-check"></i> دعم كامل للتشغيل في الخلفية وشاشة القفل</li>
+                        <li><i class="fa-solid fa-check"></i> استهلاك منخفض جداً لبيانات الإنترنت</li>
+                    </ul>
                 </div>
-                <div class="sc-visual reveal-3d-left">
+                <div class="sc-visual reveal-scale">
                     <img src="assets/images/radio-showcase.png" alt="Radio Screen" class="mockup-img">
                 </div>
             </div>
         </section>
 
-        <!-- Audio Library Section -->
-        <section id="audio" class="features-section">
-            <div class="text-center reveal">
-                <div class="section-label">المكتبة الصوتية</div>
+        <!-- Interactive Audio Library Section -->
+        <section id="audio" class="audio-section">
+            <div class="section-header reveal">
+                <div class="section-label">المكتبة الصوتية التفاعلية</div>
                 <h2 class="section-title">تلاوات خاشعة لراحة القلوب</h2>
-                <p class="section-subtitle">استمع لأشهر القراء في العالم الإسلامي بجودة عالية وبدون تقطيع.</p>
+                <p class="section-subtitle">جرّب الاستماع مباشرة الآن لأشهر القراء في العالم الإسلامي بجودة عالية.</p>
+            </div>
 
-            <div class="audio-container reveal delay-2">
+            <div class="audio-container reveal delay-1">
                 <div class="light-glass">
                     <div class="reader-tabs">
-                        <div class="tab active">
+                        <div class="tab active" data-server="https://server10.mp3quran.net/jleel/">
                             <img src="assets/images/خالد الجليل.jpg" alt="خالد الجليل">
                             <span>خالد الجليل</span>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-server="https://server11.mp3quran.net/yasser/">
                             <img src="assets/images/ياسر الدوسري.jpg" alt="ياسر الدوسري">
                             <span>ياسر الدوسري</span>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-server="https://server8.mp3quran.net/lhdan/">
                             <img src="assets/images/محمد اللحيدان.jpg" alt="محمد اللحيدان">
                             <span>محمد اللحيدان</span>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-server="https://server8.mp3quran.net/ayyub/">
                             <img src="assets/images/محمد أيوب.jpg" alt="محمد أيوب">
                             <span>محمد أيوب</span>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-server="https://server11.mp3quran.net/a_jbr/">
                             <img src="assets/images/علي جابر.jpg" alt="علي جابر">
                             <span>علي جابر</span>
                         </div>
                     </div>
+
                     <div class="surah-list">
-                        <div class="surah-item active">
+                        <div class="surah-item active" data-surah="001" data-name="سورة الفاتحة" data-duration="00:55">
                             <div class="s-info-box">
                                 <div class="s-num"><i class="fa-solid fa-volume-high"></i></div>
                                 <div class="s-texts">
@@ -267,7 +329,7 @@
                             </div>
                             <span class="s-time">00:55</span>
                         </div>
-                        <div class="surah-item">
+                        <div class="surah-item" data-surah="002" data-name="سورة البقرة" data-duration="02:14:30">
                             <div class="s-info-box">
                                 <div class="s-num">02</div>
                                 <div class="s-texts">
@@ -277,7 +339,7 @@
                             </div>
                             <span class="s-time">02:14:30</span>
                         </div>
-                        <div class="surah-item">
+                        <div class="surah-item" data-surah="018" data-name="سورة الكهف" data-duration="30:05">
                             <div class="s-info-box">
                                 <div class="s-num">18</div>
                                 <div class="s-texts">
@@ -287,7 +349,7 @@
                             </div>
                             <span class="s-time">30:05</span>
                         </div>
-                        <div class="surah-item">
+                        <div class="surah-item" data-surah="036" data-name="سورة يس" data-duration="18:42">
                             <div class="s-info-box">
                                 <div class="s-num">36</div>
                                 <div class="s-texts">
@@ -297,7 +359,7 @@
                             </div>
                             <span class="s-time">18:42</span>
                         </div>
-                        <div class="surah-item">
+                        <div class="surah-item" data-surah="055" data-name="سورة الرحمن" data-duration="14:15">
                             <div class="s-info-box">
                                 <div class="s-num">55</div>
                                 <div class="s-texts">
@@ -310,72 +372,75 @@
                     </div>
                 </div>
 
-                <div class="player-box light-glass">
-                    <div class="light-album" style="background: url('assets/images/خالد الجليل.jpg') center/cover; position: relative; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); border-radius: 24px;"></div>
+                <!-- Studio Player Card -->
+                <div class="player-box light-glass" id="player-card">
+                    <div class="light-album" id="album-art" style="background: url('assets/images/خالد الجليل.jpg') center/cover;">
+                        <div class="soundwave">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
                     </div>
-                    <div class="player-details text-center" style="margin-bottom:24px;">
-                        <h4>سورة الفاتحة</h4>
-                        <p style="color:var(--text-gray);">الشيخ خالد الجليل</p>
+                    <div class="player-details text-center">
+                        <h4 id="current-surah-title">سورة الفاتحة</h4>
+                        <p id="current-reciter-name">الشيخ خالد الجليل</p>
                     </div>
                     <div class="player-progress">
-                        <div class="progress-track">
-                            <div class="progress-fill"></div>
+                        <div class="progress-track" id="progress-track">
+                            <div class="progress-fill" id="progress-fill"></div>
                         </div>
-                        <div class="time-flex"><span>00:15</span><span>00:55</span></div>
+                        <div class="time-flex">
+                            <span id="current-time">00:00</span>
+                            <span id="total-duration">00:55</span>
+                        </div>
                     </div>
                     <div class="player-controls">
-                        <button><i class="fa-solid fa-backward-step"></i></button>
-                        <button class="play-btn"><i class="fa-solid fa-play"></i></button>
-                        <button><i class="fa-solid fa-forward-step"></i></button>
+                        <button id="prev-btn" title="السابق"><i class="fa-solid fa-backward-step"></i></button>
+                        <button class="play-btn" id="play-pause-btn" title="تشغيل / إيقاف"><i class="fa-solid fa-play"></i></button>
+                        <button id="next-btn" title="التالي"><i class="fa-solid fa-forward-step"></i></button>
                     </div>
+                    <audio id="quran-audio" preload="none"></audio>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section id="faq" class="faq-section">
-            <div class="text-center reveal">
+            <div class="section-header reveal">
                 <div class="section-label">الأسئلة الشائعة</div>
-                <h2 class="section-title">أكثر الأسئلة تكراراً</h2>
-                <p class="section-subtitle">جمعنا لك إجابات لأهم الأسئلة التي قد تخطر ببالك لتكون على دراية كاملة
-                    بمميزات التطبيق.</p>
+                <h2 class="section-title">كل ما تود معرفته عن رَتِّل</h2>
+                <p class="section-subtitle">إجابات واضحة ومباشرة لأهم الاستفسارات حول التطبيق وطريقة عمله.</p>
             </div>
 
             <div class="faq-list">
                 <div class="faq-item active reveal delay-1">
                     <div class="faq-header">
                         <span class="faq-num">01</span>
-                        <div class="faq-question">هل التطبيق مجاني بالكامل؟</div>
-                        <button class="faq-toggle"><i class="fa-solid fa-chevron-up"></i></button>
+                        <div class="faq-question">هل التطبيق مجاني بالكامل وخالٍ من الإعلانات؟</div>
+                        <button class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></button>
                     </div>
                     <div class="faq-body">
-                        <p>نعم، تطبيق رَتِّل مجاني للاستخدام الأساسي وخالي تماماً من الإعلانات المزعجة لضمان راحة
-                            المستخدم وتوفير بيئة خاشعة بدون تشتيت.</p>
+                        <p>نعم، تطبيق رَتِّل مجاني بالكامل وخالٍ تماماً من أي إعلانات تجارية لضمان راحة المستخدم وتوفير بيئة خاشعة وهادئة أثناء قراءة القرآن والأذكار.</p>
                     </div>
                 </div>
 
                 <div class="faq-item reveal delay-2">
                     <div class="faq-header">
                         <span class="faq-num">02</span>
-                        <div class="faq-question">هل يعمل التطبيق بدون إنترنت؟</div>
+                        <div class="faq-question">هل يعمل التطبيق بدون اتصال بالإنترنت؟</div>
                         <button class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></button>
                     </div>
                     <div class="faq-body">
-                        <p>نعم، الميزات الأساسية كالقرآن الكريم والأذكار تعمل دون إنترنت بعد التحميل الأول للبيانات.
-                            ولكن ستحتاج الإنترنت لتنزيل المقاطع الصوتية الجديدة.</p>
+                        <p>نعم، الميزات الأساسية مثل قراءة القرآن الكريم، حصن المسلم، المسبحة، وحساب مواقيت الصلاة تعمل بالكامل دون الحاجة للاتصال بالإنترنت. ستحتاج للإنترنت فقط عند تشغيل البث الإذاعي أو الاستماع للتلاوات الصوتية السحابية.</p>
                     </div>
                 </div>
 
                 <div class="faq-item reveal delay-3">
                     <div class="faq-header">
                         <span class="faq-num">03</span>
-                        <div class="faq-question">كيف يتم حساب أوقات الصلاة؟</div>
+                        <div class="faq-question">كيف يتم حساب أوقات الصلاة بهذه الدقة؟</div>
                         <button class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></button>
                     </div>
                     <div class="faq-body">
-                        <p>نستخدم أحدث الخوارزميات العالمية المعتمدة لتحديد أوقات الصلاة بدقة فائقة بناءً على موقعك
-                            الجغرافي والتاريخ الهجري والميلادي.</p>
+                        <p>نعتمد على أحدث الخوارزميات الفلكية المعتمدة عالمياً (مثل هيئة المساحة المصرية، رابطة العالم الإسلامي، وتقويم أم القرى) لتحديد المواقيت بدقة متناهية بناءً على خط الطول والعرض لموقعك.</p>
                     </div>
                 </div>
             </div>
@@ -383,14 +448,16 @@
 
         <!-- Bottom CTA -->
         <section id="download" class="bottom-cta reveal-scale">
-            <div class="cta-inner reveal-scale">
+            <div class="cta-inner">
                 <div class="cta-content">
-                    <h2>ابدأ رحلة العبادة<br>الآن مع رَتِّل</h2>
-                    <p style="color: var(--text-gray); margin-bottom: 32px; font-weight: 600; font-size: 1.1rem;">تطبيق إسلامي متكامل يرافقك في كل لحظات يومك، مصمم بحب ليكون رفيقك الدائم.</p>
-                    <a href="https://github.com/esm234/rattil-web/releases/download/v1.0.3/rattil.apk" class="btn btn-black"><i class="fa-brands fa-android"></i> تحميل مباشر للأندرويد</a>
+                    <h2>ابدأ رحلتك الإيمانية<br>اليوم مع رَتِّل</h2>
+                    <p>تطبيق إسلامي متكامل يرافقك في كل لحظات يومك، صُمم بشغف وإتقان ليكون رفيقك الدائم في الطاعة.</p>
+                    <a href="https://github.com/esm234/rattil-web/releases/download/v1.0.3/rattil.apk" class="btn btn-gold btn-lg" download>
+                        <i class="fa-brands fa-android"></i> تحميل مباشر للأندرويد (APK)
+                    </a>
                 </div>
                 <div class="cta-visual">
-                    <img src="assets/images/rattil logo transparent.png" alt="Rattil App" style="width: 100%; max-width: 250px; height: auto;">
+                    <img src="assets/images/rattil logo transparent.png" alt="Rattil App">
                 </div>
             </div>
         </section>
@@ -398,9 +465,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-top">
-                <div class="logo">
-                    <img src="assets/images/rattil logo transparent.png" alt="Rattil Logo" style="height: 64px; object-fit: contain;">
-                </div>
+                <a href="#" class="logo">
+                    <img src="assets/images/rattil logo transparent.png" alt="Rattil Logo" style="height: 48px; object-fit: contain;">
+                    <span class="logo-brand">رَتِّل</span>
+                </a>
                 <div class="footer-links">
                     <a href="privacy.html">سياسة الخصوصية</a>
                     <a href="terms.html">شروط الاستخدام</a>
@@ -408,78 +476,168 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 تطبيق رَتِّل. جميع الحقوق محفوظة. تم التطوير بشغف لخدمة المسلمين.
+                &copy; 2026 تطبيق رَتِّل (RATTIL). جميع الحقوق محفوظة — طُوّر بإتقان لخدمة المسلمين.
             </div>
         </footer>
     </div>
 
-    <!-- Scripts -->
+    <!-- Interactive Scripts -->
     <script>
+        // 1. Smooth FAQ Accordion
         document.querySelectorAll('.faq-header').forEach(header => {
             header.addEventListener('click', () => {
                 const item = header.parentElement;
-
-                // Close others
                 document.querySelectorAll('.faq-item').forEach(otherItem => {
-                    if (otherItem !== item && otherItem.classList.contains('active')) {
-                        otherItem.classList.remove('active');
-                        otherItem.querySelector('.faq-toggle i').classList.replace('fa-chevron-up', 'fa-chevron-down');
-                    }
+                    if (otherItem !== item) otherItem.classList.remove('active');
                 });
-
-                // Toggle current
                 item.classList.toggle('active');
-                const icon = header.querySelector('.faq-toggle i');
-                if (item.classList.contains('active')) {
-                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-                } else {
-                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-                }
             });
         });
 
-        // Reciter Switching Logic
-        const reciters = document.querySelectorAll('.reader-tabs .tab');
-        const albumArt = document.querySelector('.light-album');
-        const playerDetails = document.querySelector('.player-details');
-        const playerName = document.querySelector('.player-details p');
-        
-        reciters.forEach(tab => {
+        // 2. Live Prayer Countdown Timer
+        const countdownEl = document.getElementById('live-countdown');
+        let totalSeconds = (27 * 60) + 41; // Starting from 00:27:41
+        setInterval(() => {
+            if (totalSeconds <= 0) totalSeconds = 3600;
+            totalSeconds--;
+            const hrs = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+            const mins = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+            const secs = String(totalSeconds % 60).padStart(2, '0');
+            if (countdownEl) countdownEl.textContent = `${hrs}:${mins}:${secs}`;
+        }, 1000);
+
+        // 3. Functional Quran Audio Player
+        const audio = document.getElementById('quran-audio');
+        const playBtn = document.getElementById('play-pause-btn');
+        const playIcon = playBtn.querySelector('i');
+        const playerCard = document.getElementById('player-card');
+        const albumArt = document.getElementById('album-art');
+        const surahTitleEl = document.getElementById('current-surah-title');
+        const reciterNameEl = document.getElementById('current-reciter-name');
+        const progressFill = document.getElementById('progress-fill');
+        const progressTrack = document.getElementById('progress-track');
+        const currentTimeEl = document.getElementById('current-time');
+        const totalDurationEl = document.getElementById('total-duration');
+
+        const reciterTabs = document.querySelectorAll('.reader-tabs .tab');
+        const surahItems = document.querySelectorAll('.surah-item');
+
+        let currentServer = 'https://server10.mp3quran.net/jleel/';
+        let currentSurahCode = '001';
+
+        function formatTime(sec) {
+            if (isNaN(sec)) return "00:00";
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        }
+
+        function loadTrack(autoPlay = false) {
+            audio.src = `${currentServer}${currentSurahCode}.mp3`;
+            progressFill.style.width = '0%';
+            currentTimeEl.textContent = '00:00';
+            if (autoPlay) {
+                audio.play().then(() => {
+                    playIcon.classList.replace('fa-play', 'fa-pause');
+                    playerCard.classList.add('is-playing');
+                }).catch(() => {});
+            }
+        }
+
+        // Initialize first track URL
+        loadTrack(false);
+
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.classList.replace('fa-play', 'fa-pause');
+                playerCard.classList.add('is-playing');
+            } else {
+                audio.pause();
+                playIcon.classList.replace('fa-pause', 'fa-play');
+                playerCard.classList.remove('is-playing');
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            if (audio.duration) {
+                const percent = (audio.currentTime / audio.duration) * 100;
+                progressFill.style.width = `${percent}%`;
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+            }
+        });
+
+        audio.addEventListener('ended', () => {
+            playIcon.classList.replace('fa-pause', 'fa-play');
+            playerCard.classList.remove('is-playing');
+            progressFill.style.width = '0%';
+        });
+
+        progressTrack.addEventListener('click', (e) => {
+            if (!audio.duration) return;
+            const rect = progressTrack.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            audio.currentTime = (clickX / rect.width) * audio.duration;
+        });
+
+        // Switch Reciter
+        reciterTabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 if (tab.classList.contains('active')) return;
-
-                reciters.forEach(t => t.classList.remove('active'));
+                reciterTabs.forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
-                
+
+                currentServer = tab.dataset.server;
                 const reciterName = tab.querySelector('span').innerText;
                 const reciterImg = tab.querySelector('img').src;
-                
-                // Animation - Fade Out
+
                 albumArt.style.opacity = '0';
                 albumArt.style.transform = 'scale(0.95)';
-                playerDetails.style.opacity = '0';
-                playerDetails.style.transform = 'translateY(10px)';
-                
                 setTimeout(() => {
-                    // Update content
                     albumArt.style.background = `url('${reciterImg}') center/cover`;
-                    playerName.innerText = `الشيخ ${reciterName}`;
-                    
-                    // Animation - Fade In
+                    reciterNameEl.innerText = `الشيخ ${reciterName}`;
                     albumArt.style.opacity = '1';
                     albumArt.style.transform = 'scale(1)';
-                    playerDetails.style.opacity = '1';
-                    playerDetails.style.transform = 'translateY(0)';
-                }, 300); // match css transition duration
+                }, 220);
+
+                loadTrack(!audio.paused);
             });
         });
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.2,
-            rootMargin: "0px 0px -200px 0px"
-        };
+        // Switch Surah
+        surahItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                surahItems.forEach(s => {
+                    s.classList.remove('active');
+                    const numBox = s.querySelector('.s-num');
+                    numBox.innerHTML = s.dataset.surah.slice(1);
+                });
 
+                item.classList.add('active');
+                item.querySelector('.s-num').innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+
+                currentSurahCode = item.dataset.surah;
+                surahTitleEl.innerText = item.dataset.name;
+                totalDurationEl.innerText = item.dataset.duration;
+
+                loadTrack(true);
+            });
+        });
+
+        // Next / Prev Buttons
+        document.getElementById('next-btn').addEventListener('click', () => {
+            const activeIndex = [...surahItems].findIndex(el => el.classList.contains('active'));
+            const nextIndex = (activeIndex + 1) % surahItems.length;
+            surahItems[nextIndex].click();
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            const activeIndex = [...surahItems].findIndex(el => el.classList.contains('active'));
+            const prevIndex = (activeIndex - 1 + surahItems.length) % surahItems.length;
+            surahItems[prevIndex].click();
+        });
+
+        // 4. Intersection Observer for Scroll Reveals
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -487,15 +645,11 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
 
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal, .reveal-scale, .reveal-left, .reveal-right, .reveal-3d-left, .reveal-3d-right");
-            for (var i = 0; i < reveals.length; i++) {
-                observer.observe(reveals[i]);
-            }
-        }
-        reveal();
+        document.querySelectorAll(".reveal, .reveal-scale, .reveal-left, .reveal-right").forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 
